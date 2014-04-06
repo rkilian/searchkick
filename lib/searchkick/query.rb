@@ -273,6 +273,9 @@ module Searchkick
         end
       end
 
+      # script fields
+      payload[:script_fields] = options[:script_fields]
+
       # model and eagar loading
       load = options[:load].nil? ? true : options[:load]
 
